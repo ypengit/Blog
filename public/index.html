@@ -257,6 +257,311 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/13/LeetCode代码-逐渐更新/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ypeng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ypengit">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/05/13/LeetCode代码-逐渐更新/" itemprop="url">LeetCode代码(逐渐更新)</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-13T21:31:46+08:00">
+                2017-05-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/编程/" itemprop="url" rel="index">
+                    <span itemprop="name">编程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="1-100"><a href="#1-100" class="headerlink" title="#1~100"></a>#1~100</h2><h3 id="1-Two-Sum"><a href="#1-Two-Sum" class="headerlink" title="#1 Two Sum"></a>#1 Two Sum</h3><p><strong>Description:</strong></p>
+<blockquote>
+<p>Given an array of integers, return indices of the two numbers such that they add up to a specific target.<br>You may assume that each input would have exactly one solution, and you may not use the same element twice.</p>
+</blockquote>
+<p><strong>Example</strong></p>
+<blockquote>
+<p>Given nums = [2, 7, 11, 15], target = 9,<br>Because nums[0] + nums[1] = 2 + 7 = 9,<br>return [0, 1]. </p>
+</blockquote>
+<p><strong>Code</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></div><div class="line"><span class="keyword">public</span>:</div><div class="line">	<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; twoSum(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums, <span class="keyword">int</span> target) &#123;</div><div class="line">		<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; res;</div><div class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.size()<span class="number">-1</span>; i++)&#123;</div><div class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt; nums.size();j++)&#123;</div><div class="line">                <span class="keyword">if</span> (nums[i] + nums[j] == target)&#123;</div><div class="line">					res.resize(<span class="number">2</span>);</div><div class="line">					res[<span class="number">0</span>] = i;</div><div class="line">					res[<span class="number">1</span>] = j;</div><div class="line">					<span class="keyword">return</span> res;</div><div class="line">				&#125;</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">		<span class="keyword">return</span> res;</div><div class="line">	&#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<h2 id="400-500"><a href="#400-500" class="headerlink" title="#400~500"></a>#400~500</h2><h3 id="461-Hamming-Distance"><a href="#461-Hamming-Distance" class="headerlink" title="#461 Hamming Distance"></a>#461 Hamming Distance</h3><p><strong>Description:</strong></p>
+<blockquote>
+<p>The Hamming distance between two integers is the number of positions at which the corresponding bits are different.<br>Given two integers x and y, calculate the Hamming distance.</p>
+</blockquote>
+<p><strong>Example</strong></p>
+<blockquote>
+<p>Input: x = 1, y = 4<br>Output: 2<br>Explanation:<br>1   (0 0 0 1)<br>4   (0 1 0 0)<br>　　↑　  ↑ </p>
+</blockquote>
+<p>The above arrows point to positions where the corresponding bits are different.</p>
+<p><strong>Code</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span></div><div class="line">&#123;</div><div class="line">	<span class="keyword">public</span>:</div><div class="line">		<span class="function"><span class="keyword">int</span> <span class="title">hammingDistance</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span> </span></div><div class="line">		&#123;</div><div class="line">			<span class="keyword">int</span> sum = <span class="number">0</span>;</div><div class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">32</span>; i++)</div><div class="line">			&#123;</div><div class="line">				<span class="keyword">int</span> flagx = x % <span class="number">2</span>;</div><div class="line">				<span class="keyword">int</span> flagy = y % <span class="number">2</span>;</div><div class="line">				<span class="keyword">if</span> (flagx != flagy)</div><div class="line">				&#123;</div><div class="line">					sum++;</div><div class="line">				&#125;</div><div class="line">				x /= <span class="number">2</span>;</div><div class="line">				y /= <span class="number">2</span>;</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">return</span> sum;</div><div class="line">		&#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<h2 id="500-600"><a href="#500-600" class="headerlink" title="#500~600"></a>#500~600</h2><h3 id="561-Array-Partition-I"><a href="#561-Array-Partition-I" class="headerlink" title="#561 Array Partition I"></a>#561 Array Partition I</h3><p><strong>Description:</strong></p>
+<blockquote>
+<p>Given an array of 2n integers, your task is to group these integers into n pairs of integer, say (a1, b1), (a2, b2), …, (an, bn) which makes sum of min(ai, bi) for all i from 1 to n as large as possible.</p>
+</blockquote>
+<p><strong>Example</strong></p>
+<blockquote>
+<p>Input: [1,4,3,2]<br>Output: 4<br>Explanation: n is 2, and the maximum sum of pairs is 4.</p>
+</blockquote>
+<p><strong>Code</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></div><div class="line"><span class="keyword">public</span>:</div><div class="line">	<span class="function"><span class="keyword">int</span> <span class="title">arrayPairSum</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums)</span> </span>&#123;</div><div class="line">		sort(nums.begin(), nums.end());</div><div class="line">		<span class="keyword">int</span> n = nums.size();</div><div class="line">		<span class="keyword">int</span> sum = <span class="number">0</span>;</div><div class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i += <span class="number">2</span>)&#123;</div><div class="line">			sum += nums[i];</div><div class="line">		&#125;</div><div class="line">		<span class="keyword">return</span> sum;</div><div class="line">	&#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/12/English-essay-Fame-other-essays-from-the-teacher-of-LiuHanPeng/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ypeng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ypengit">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/05/12/English-essay-Fame-other-essays-from-the-teacher-of-LiuHanPeng/" itemprop="url">English essay:Fame && other essays from the teacher of LiuHanPeng</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-12T19:14:35+08:00">
+                2017-05-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/英语作文/" itemprop="url" rel="index">
+                    <span itemprop="name">英语作文</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="English-Essay"><a href="#English-Essay" class="headerlink" title="English Essay"></a><center>English Essay</center></h1><h2 id="Model-Essay-1"><a href="#Model-Essay-1" class="headerlink" title="Model Essay #1"></a>Model Essay #1</h2><h3 id="Fame-—-Good-or-Evil"><a href="#Fame-—-Good-or-Evil" class="headerlink" title="Fame — Good or Evil?"></a><center>Fame — Good or Evil?</center></h3><p>Fame, a notion which humankind constantly covet1s since ancient times, has such a meaning to individuals. Whereas, every coin has two sides. The opinion concerning what the fame actually brought to us varies from person to person.</p>
+<p>First and foremost, with certain benefits, prestige is regarded as the emblem of success. To name merely a few, fame enables one to emerge in the view of public as well as being prevalent. Additionally, once a person enjoys the reputation, he subsequently inclines to derive much more opportunities. Notably, it is this opportunity that brings them further extol, esteem, money, and so forth. In crude terms, fame and success, to some extent, while remain a positive correlation.</p>
+<p>Nevertheless, manifest as it is, we shouldn’t omit the demerit of fame, neither. Striving for prestige has a trend to lead characters to a misperception, which is pursuing fame without virtues. Provided that it forms an unscrupulous ethos among the entire society, it would be destructive for the whole country.</p>
+<p>From my perspective, I take a more optimistic stand on this topic. Hence, I reckon fame as a decent affair. On the one hand, unscrupulous people are merely in a tiny proportion, the majority of us still possess an upright worldview. On the other hand, in a society, at any rate we do need some celebrated individuals to lead public opinion. Otherwise, our society will be trapped in a mess. Consequently, whether fame good or evil hinges on how we utilize it.<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/05/12/English-essay-Fame-other-essays-from-the-teacher-of-LiuHanPeng/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/12/English-essay-Suppose-a-foreign-friend-of-yours-is-coming-to-visit-your-campus-what-is-the-most-interesting-place-you-would-like-to-take-him-her-to-see-and-why/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -346,10 +651,9 @@
 
       
         
-          <h1 id="English-essay"><a href="#English-essay" class="headerlink" title="English essay"></a>English essay</h1><h2 id="Suppose-a-foreign-friend-of-yours-is-coming-to-visit-your-campus-what-is-the-most-interesting-place-you-would-like-to-take-him-her-to-see-and-why"><a href="#Suppose-a-foreign-friend-of-yours-is-coming-to-visit-your-campus-what-is-the-most-interesting-place-you-would-like-to-take-him-her-to-see-and-why" class="headerlink" title="Suppose a foreign friend of yours is coming to visit your campus, what is the most interesting place you would like to take him/her to see and why?"></a>Suppose a foreign friend of yours is coming to visit your campus, what is the most interesting place you would like to take him/her to see and why?</h2><h3 id="Model-essay-1"><a href="#Model-essay-1" class="headerlink" title="Model essay #1"></a>Model essay #1</h3><hr>
-<p>If a foreign friend is coming to visit our campus, the most interesting place I’d like to take him/her to see is the school art gallery. There are many exhibitions held here periodically, including calligraphy, painting, photography and sculpture, etc. Most of the exhibits are created by our university students, but sometimes, there are authentic works of well-known artists, like the famous painting <em>Shrimp</em> by Qibaishi.</p>
-<p>The reason why I take him/her to the school art gallery is that I hope he/she can know more about the campus life of Chinese university students. I’d like him/her to know that our campus life is not confined to study; on the contary, our campus life is rich and colorful. In addition, compared with other places, the school art gallery is more representative, because it collects excellent works of our university students and it shows our intelligence and wisdom intensively.</p>
-<p>I am glad that our university has the school art gallery and I believe everyone who comes to see it will like it.<br>
+          <h1 id="English-essay"><a href="#English-essay" class="headerlink" title="English essay"></a>English essay</h1><h2 id="Suppose-a-foreign-friend-of-yours-is-coming-to-visit-your-campus-what-is-the-most-interesting-place-you-would-like-to-take-him-her-to-see-and-why"><a href="#Suppose-a-foreign-friend-of-yours-is-coming-to-visit-your-campus-what-is-the-most-interesting-place-you-would-like-to-take-him-her-to-see-and-why" class="headerlink" title="Suppose a foreign friend of yours is coming to visit your campus, what is the most interesting place you would like to take him/her to see and why?"></a>Suppose a foreign friend of yours is coming to visit your campus, what is the most interesting place you would like to take him/her to see and why?</h2><h3 id="Model-essay-1-86-5"><a href="#Model-essay-1-86-5" class="headerlink" title="Model essay #1  (86.5)"></a>Model essay #1  (86.5)</h3><hr>
+<p>If a foreign friend is coming to visit our campus, the most interesting place I’d like to take him to see is the school art gallery. There are many exhibitions held here periodically, including calligraphy, painting, photography and sculpture, etc. Most of the exhibits are created by our university students, but sometimes, there are authentic works of well-known artists, like the famous painting <em>Shrimp</em> by Qibaishi.<br>The reason why I take him to the school art gallery is that I hope he can know more about the campus life of Chinese university students. I’d like him to know that our campus life is not confined to study. On the contrary, our campus life is rich and colorful. In addition, compared with other places, school art gallery is more representative, because it collects excellent works of our university students and it shows our intelligence and wisdom intensively.</p>
+<p>I am glad that our university has the school art gallery and I believe everyone who comes to see it will like it.</p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/05/12/English-essay-Suppose-a-foreign-friend-of-yours-is-coming-to-visit-your-campus-what-is-the-most-interesting-place-you-would-like-to-take-him-her-to-see-and-why/#more" rel="contents">
@@ -723,7 +1027,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -745,7 +1049,7 @@
             
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">标签</span>
               
             </div>

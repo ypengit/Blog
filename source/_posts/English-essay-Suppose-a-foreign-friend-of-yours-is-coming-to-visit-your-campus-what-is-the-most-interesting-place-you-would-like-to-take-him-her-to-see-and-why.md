@@ -11,16 +11,17 @@ tags: English Essay
 
 # English essay
 ## Suppose a foreign friend of yours is coming to visit your campus, what is the most interesting place you would like to take him/her to see and why?
-### Model essay #1
+### Model essay #1  (86.5)
 ---
  
-If a foreign friend is coming to visit our campus, the most interesting place I'd like to take him/her to see is the school art gallery. There are many exhibitions held here periodically, including calligraphy, painting, photography and sculpture, etc. Most of the exhibits are created by our university students, but sometimes, there are authentic works of well-known artists, like the famous painting *Shrimp* by Qibaishi.
-
-The reason why I take him/her to the school art gallery is that I hope he/she can know more about the campus life of Chinese university students. I'd like him/her to know that our campus life is not confined to study; on the contary, our campus life is rich and colorful. In addition, compared with other places, the school art gallery is more representative, because it collects excellent works of our university students and it shows our intelligence and wisdom intensively.
-
+If a foreign friend is coming to visit our campus, the most interesting place I'd like to take him to see is the school art gallery. There are many exhibitions held here periodically, including calligraphy, painting, photography and sculpture, etc. Most of the exhibits are created by our university students, but sometimes, there are authentic works of well-known artists, like the famous painting *Shrimp* by Qibaishi.
+The reason why I take him to the school art gallery is that I hope he can know more about the campus life of Chinese university students. I'd like him to know that our campus life is not confined to study. On the contrary, our campus life is rich and colorful. In addition, compared with other places, school art gallery is more representative, because it collects excellent works of our university students and it shows our intelligence and wisdom intensively.
+ 
 I am glad that our university has the school art gallery and I believe everyone who comes to see it will like it.
+
 <!--more-->
-### My first essay
+
+### My first essay (77.5)
 ---
 
 If a friend is coming to visit our campus, the most of interesting place I'd like to take him/her is the school art gallery. There are many exhibitions held here periodically, including calligraphy, painting, photography and sculpture, etc. Most of the exhibits are created by the students in our university, but sometimes, there are some authentic works of well-known artist, like the famous painting *Shrimp* by Qibaishi.
@@ -30,13 +31,29 @@ The reason why I take him/her to the school art gallery is that I hope him/her c
 I am gald that our university has this art gallery and I believe everyone who comes to see it will like it.
 
 
-### My second essay
+### My second essay(77)
 ---
 
 If a foreign friend is coming to visit our school, the most of interesting place is the school of art gallery. There are many exhibitions held here periodically, including calligraphy, painting, phtography and sculpture, etc. The most of exhibits are created by our university students, but sometimes, there are some authentic works of well-known artists, like the famous painting *Shrimp* by Qibaishi.
 
 The reason why I take him/her to the school art gallery is that I hope that he/her can know more about the campus life of Chinese university students. I'd like him/her to know that our campus life is not confined by study; on the contary, our campus life is rich and colorful. In addition, compared with other place, the school art gallery is more reprentative, because it collects excellent works of our university students and it shows our intelligence and wisdom intensively.
 
+I am glad that our university has the school art gallery and I believe everyone who comes to see it will like it.
+### My third essay(edited 84)
+
+If a friend is coming to visit our campus, I'd like to take him to the school art gallery. There are many exhibitions held here periodically, including calligraphy, painting, photography and sculpture, etc. Most of the exhibits are created by the students in our university, but sometimes, there are some authentic works of well-known artist, like the famous painting *Shrimp* by Qibaishi.
+The reason why I take him to the school art gallery is that I hope him can know more about the life of Chinese students. I'd like him to know our university students are not confined by study. On the contrary, our campus life is rich and colorful. In addition, compared with other places, our school art gallery is more representative, because it collects excellent works of our university students and it shows our intelligence and wisdom intensively.
+ 
+I am gald that our university has this art gallery and I believe everyone who comes to see it will like it.
+
+### My fourth essay(84.5)
+
+If a foreign friend is coming to visit our school, I would like to take him to the most interesting place where is the school art gallery.
+
+There are many exhibitions held here periodically, including calligraphy, painting, phtography and sculpture, etc. Many exhibits are created by our university students, but sometimes, there are some authentic works of well-known artists, like the famous painting *Shrimp* by Qibaishi.
+
+The reason why I take him to the school art gallery is that I hope that he/her can know more about the campus life of Chinese university students. I'd like him to know that our campus life is not confined by study. On the contrary, our campus life is rich and colorful. In addition, compared with other places, school art gallery is more representative, because it collects excellent works of our university students and it shows our intelligence and wisdom intensively.
+ 
 I am glad that our university has the school art gallery and I believe everyone who comes to see it will like it.
 
 
@@ -68,5 +85,6 @@ In China, there’s a saying that "The landscape of Guilin tops that of any othe
 Overlooking the Li Jiang River, Guilin is located in the northeast of Guangxi. The name was derived from the cassia trees of the location. The trees line the streets of the town with yellow flowers blossoming every September, filling the air with sweet scent.
 
 Guilin is a place of breath-taking scenery. From ancient times, Guilin has been noted for its elegant landscape. It features beautiful mountains, clear rivers, grotesque rocks and mystic crags, which is a feast for the eyes. Sitting on a bamboo raft drifting down the river, visitors can see the varied shapes of the pinnacles reflected in the water. They will feel as if they were in a scroll of Chinese landscape painting.I believe that my foreign friend will marvel at the unparalleled beauty of Guilin.
+
 
 
