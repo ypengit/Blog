@@ -346,40 +346,20 @@
 
       
         
-          
-            <h2 id="1-100"><a href="#1-100" class="headerlink" title="#1~100"></a>#1~100</h2><h3 id="1-Two-Sum"><a href="#1-Two-Sum" class="headerlink" title="#1 Two Sum"></a>#1 Two Sum</h3><p><strong>Description:</strong></p>
+          <h2 id="1-100"><a href="#1-100" class="headerlink" title="#1~100"></a>#1~100</h2><h3 id="1-Two-Sum"><a href="#1-Two-Sum" class="headerlink" title="#1 Two Sum"></a>#1 Two Sum</h3><p><strong>Description:</strong></p>
 <blockquote>
 <p>Given an array of integers, return indices of the two numbers such that they add up to a specific target.<br>You may assume that each input would have exactly one solution, and you may not use the same element twice.</p>
 </blockquote>
 <p><strong>Example</strong></p>
 <blockquote>
-<p>Given nums = [2, 7, 11, 15], target = 9,<br>Because nums[0] + nums[1] = 2 + 7 = 9,<br>return [0, 1]. </p>
-</blockquote>
-<p><strong>Code</strong></p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></div><div class="line"><span class="keyword">public</span>:</div><div class="line">	<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; twoSum(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums, <span class="keyword">int</span> target) &#123;</div><div class="line">		<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; res;</div><div class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.size()<span class="number">-1</span>; i++)&#123;</div><div class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt; nums.size();j++)&#123;</div><div class="line">                <span class="keyword">if</span> (nums[i] + nums[j] == target)&#123;</div><div class="line">					res.resize(<span class="number">2</span>);</div><div class="line">					res[<span class="number">0</span>] = i;</div><div class="line">					res[<span class="number">1</span>] = j;</div><div class="line">					<span class="keyword">return</span> res;</div><div class="line">				&#125;</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">		<span class="keyword">return</span> res;</div><div class="line">	&#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
-<h2 id="400-500"><a href="#400-500" class="headerlink" title="#400~500"></a>#400~500</h2><h3 id="461-Hamming-Distance"><a href="#461-Hamming-Distance" class="headerlink" title="#461 Hamming Distance"></a>#461 Hamming Distance</h3><p><strong>Description:</strong></p>
-<blockquote>
-<p>The Hamming distance between two integers is the number of positions at which the corresponding bits are different.<br>Given two integers x and y, calculate the Hamming distance.</p>
-</blockquote>
-<p><strong>Example</strong></p>
-<blockquote>
-<p>Input: x = 1, y = 4<br>Output: 2<br>Explanation:<br>1   (0 0 0 1)<br>4   (0 1 0 0)<br>　　↑　  ↑ </p>
-</blockquote>
-<p>The above arrows point to positions where the corresponding bits are different.</p>
-<p><strong>Code</strong></p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span></div><div class="line">&#123;</div><div class="line">	<span class="keyword">public</span>:</div><div class="line">		<span class="function"><span class="keyword">int</span> <span class="title">hammingDistance</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span> </span></div><div class="line">		&#123;</div><div class="line">			<span class="keyword">int</span> sum = <span class="number">0</span>;</div><div class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">32</span>; i++)</div><div class="line">			&#123;</div><div class="line">				<span class="keyword">int</span> flagx = x % <span class="number">2</span>;</div><div class="line">				<span class="keyword">int</span> flagy = y % <span class="number">2</span>;</div><div class="line">				<span class="keyword">if</span> (flagx != flagy)</div><div class="line">				&#123;</div><div class="line">					sum++;</div><div class="line">				&#125;</div><div class="line">				x /= <span class="number">2</span>;</div><div class="line">				y /= <span class="number">2</span>;</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">return</span> sum;</div><div class="line">		&#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
-<h2 id="500-600"><a href="#500-600" class="headerlink" title="#500~600"></a>#500~600</h2><h3 id="561-Array-Partition-I"><a href="#561-Array-Partition-I" class="headerlink" title="#561 Array Partition I"></a>#561 Array Partition I</h3><p><strong>Description:</strong></p>
-<blockquote>
-<p>Given an array of 2n integers, your task is to group these integers into n pairs of integer, say (a1, b1), (a2, b2), …, (an, bn) which makes sum of min(ai, bi) for all i from 1 to n as large as possible.</p>
-</blockquote>
-<p><strong>Example</strong></p>
-<blockquote>
-<p>Input: [1,4,3,2]<br>Output: 4<br>Explanation: n is 2, and the maximum sum of pairs is 4.</p>
-</blockquote>
-<p><strong>Code</strong></p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></div><div class="line"><span class="keyword">public</span>:</div><div class="line">	<span class="function"><span class="keyword">int</span> <span class="title">arrayPairSum</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums)</span> </span>&#123;</div><div class="line">		sort(nums.begin(), nums.end());</div><div class="line">		<span class="keyword">int</span> n = nums.size();</div><div class="line">		<span class="keyword">int</span> sum = <span class="number">0</span>;</div><div class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i += <span class="number">2</span>)&#123;</div><div class="line">			sum += nums[i];</div><div class="line">		&#125;</div><div class="line">		<span class="keyword">return</span> sum;</div><div class="line">	&#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
-
-          
+<p>Given nums = [2, 7, 11, 15], target = 9,<br>Because nums[0] + nums[1] = 2 + 7 = 9,<br>return [0, 1].<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/05/13/LeetCode代码-逐渐更新/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
