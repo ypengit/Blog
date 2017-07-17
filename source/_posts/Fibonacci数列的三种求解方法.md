@@ -1,5 +1,5 @@
 ---
-title: '''Fibonacci数列的三种求解方法（转载）'''
+title: '''fibonacci数列的三种求解方法（转载）'''
 date: 2017-07-17 16:39:58
 tags:
 编程
