@@ -1,0 +1,798 @@
+<!doctype html>
+
+
+
+
+<html class="theme-next mist" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="杂谈 编程," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="相识在2017年11月-12月期间，我和几位同学一起做CCF的数据挖掘比赛，我们选择了“客户用电异常行为分析”这个题目。在入群后，我感觉我认识了一个奇葩。 此人名为“智浪淘沙”，大家都叫他“智教授”常常水群，话特别多，经常别人说一句，他可以说几句。对人非常热情，也常常给群里的其他人出主意，我还单独问过他两个问题，我感觉他比较平易近人。且由大家对他的称呼，可知此人还是很有水平的。 他所在的队伍名为“">
+<meta name="keywords" content="杂谈 编程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="了解“智教授”有感">
+<meta property="og:url" content="http://yoursite.com/2017/05/19/了解“智教授”有感/index.html">
+<meta property="og:site_name" content="ypengit">
+<meta property="og:description" content="相识在2017年11月-12月期间，我和几位同学一起做CCF的数据挖掘比赛，我们选择了“客户用电异常行为分析”这个题目。在入群后，我感觉我认识了一个奇葩。 此人名为“智浪淘沙”，大家都叫他“智教授”常常水群，话特别多，经常别人说一句，他可以说几句。对人非常热情，也常常给群里的其他人出主意，我还单独问过他两个问题，我感觉他比较平易近人。且由大家对他的称呼，可知此人还是很有水平的。 他所在的队伍名为“">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0001.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0002.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0003.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0004.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0005.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0006.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0007.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0008.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0009.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0010.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0011.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0012.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0013.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0014.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0015.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0016.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0017.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0018.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0019.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0020.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0021.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0022.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0023.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0024.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0025.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0026.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0027.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0028.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0029.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0030.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0031.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0032.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0033.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0034.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0035.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0036.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0037.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0038.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0039.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0040.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0041.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0042.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0043.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0044.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0045.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0046.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0047.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0048.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0049.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0050.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0051.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0052.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0053.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0054.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0055.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0056.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0057.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0058.png">
+<meta property="og:image" content="https://ypengit.github.io/images/img_0059.png">
+<meta property="og:updated_time" content="2017-05-19T15:42:43.743Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="了解“智教授”有感">
+<meta name="twitter:description" content="相识在2017年11月-12月期间，我和几位同学一起做CCF的数据挖掘比赛，我们选择了“客户用电异常行为分析”这个题目。在入群后，我感觉我认识了一个奇葩。 此人名为“智浪淘沙”，大家都叫他“智教授”常常水群，话特别多，经常别人说一句，他可以说几句。对人非常热情，也常常给群里的其他人出主意，我还单独问过他两个问题，我感觉他比较平易近人。且由大家对他的称呼，可知此人还是很有水平的。 他所在的队伍名为“">
+<meta name="twitter:image" content="https://ypengit.github.io/images/img_0001.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: false,
+    motion: false,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/05/19/了解“智教授”有感/"/>
+
+
+
+
+
+  <title>了解“智教授”有感 | ypengit</title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">ypengit</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/19/了解“智教授”有感/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ypeng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ypengit">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">了解“智教授”有感</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-19T22:30:16+08:00">
+                2017-05-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/杂谈/" itemprop="url" rel="index">
+                    <span itemprop="name">杂谈</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="相识"><a href="#相识" class="headerlink" title="相识"></a>相识</h2><p>在2017年11月-12月期间，我和几位同学一起做CCF的数据挖掘比赛，我们选择了“客户用电异常行为分析”这个题目。在入群后，我感觉我认识了一个奇葩。</p>
+<p>此人名为“智浪淘沙”，大家都叫他“智教授”常常水群，话特别多，经常别人说一句，他可以说几句。对人非常热情，也常常给群里的其他人出主意，我还单独问过他两个问题，我感觉他比较平易近人。且由大家对他的称呼，可知此人还是很有水平的。</p>
+<p>他所在的队伍名为“ 隐马尔科夫联盟”，初赛和复赛都在三，队伍能力很强，还进了最终答辩。赛后，他们主动的把他们答辩的PPT放到了群里，我拜读了他们的PPT，心里很是震撼。</p>
+<p>我在和队友做的过程中，虽然也想到了一些和他们相同的方法，但首先是不全，另外他们竟然将他们的想法用代码实现了出来。从那时起我便是很佩服的。<br><a id="more"></a></p>
+<h2 id="缘由"><a href="#缘由" class="headerlink" title="缘由"></a>缘由</h2><p>我之所以要写这篇博客，不仅是了解到了这样一个人。毕竟这样的了解如隔靴搔痒，终究是见不到他们做到这些付出了多少努力。</p>
+<p>在上周六，这位智教授在群里发了一份Word文件，名为“想从事数据科学家的自我修炼（浪叫兽的书单）一年之内从零基础入门（以不抱大腿的姿势）拿下数据竞赛 一等奖 ，二等奖，三等奖” 我观后大有感触。</p>
+<p>平常人常常都想做到更好，但是更多的时候是眼高手低，虽然有很高的目标但是却不能一步一步的脚踏实地去完成这个目标，反而期望能够出现奇迹。但现实情况下，“奇迹”是很难出现的。</p>
+<p>我总是以为有些人能做到的东西，我自己也可以做的到。实际上，别人取得巨大成功所付出的努力是我难以付出的，我总是临渊羡鱼，总是囤货居奇，而很少真刀真枪去干，脚踏实地去干。</p>
+<p>因此今天我将智教授的文章发出来，供我自身进行警醒。</p>
+<h2 id="智教授文章正文"><a href="#智教授文章正文" class="headerlink" title="智教授文章正文"></a>智教授文章正文</h2><p>想从事数据科学家的自我修炼（浪叫兽的书单）一年之内从零基础入门（以不抱大腿的姿势）拿下数据竞赛 一等奖 ，二等奖，三等奖</p>
+<p>携程赛的初练书单</p>
+<p><img src="https://ypengit.github.io/images/img_0001.png" style="text-align：center">  </p>
+<h3 id="第一次"><a href="#第一次" class="headerlink" title="第一次"></a>第一次</h3><p>在科赛网站上，我第一次报名参加了比赛是，酒店未来30天产量预测，当时参加比赛是16年的7月中旬了。距今日的17年5月中旬，不到一年的时间，在科赛网，同样是在携程的出题下拿到了一个冠军一等奖</p>
+<p><img src="https://ypengit.github.io/images/img_0002.png" style="text-align：center">  </p>
+<p>进入正题把，我来写一下我的历史读书记录和自发学习过程：<br>其实刚刚入门是因为想玩爬虫爬新闻做预测：</p>
+<h3 id="入门读的书有"><a href="#入门读的书有" class="headerlink" title="入门读的书有"></a>入门读的书有</h3><blockquote>
+<p>PYTHON自然语言处理中文翻译 NLTK 中文版<br>quantmod-R中的金融分析包<br>R数据导入和导出（包括RODBC）<br>RODBC中文介绍<br>上面可能也是一些介绍把<br>了解了一下R语言，因为当初搞不定字符问题 就转战了Python爬虫，进入到了Python语言的学习<br>Python数据分析基础教程：NumPy学习指南（第2版）<br>然后找寻金融相关的资料<br>金融时间序列分析  第3版<br>依旧对R 不放心的时代<br>R语言核心技术手册（第2版）<br>自己动手写网络爬虫<br>用Python写网络爬虫<br>此时应该是在QQ群里找大鱼学的爬虫 scrapy  和 urllib ,后面发现requests + bs4  入门爬虫比较适合  &gt;我，写了爬虫直接写个for 就把新闻爬到数据库中了。<br>在学numpy的过程中加入到了pandas的学习群  和牛叫兽学习pd 此时牛叫兽推荐我看的书是<br>利用Python进行数据分析<br>Python for Data Analysis<br>因为要作图展示 找了一些资料<br>matplotlib函数汇总<br>用Python做科学计算<br>还陆陆续续的找了 R 和 Python资料<br>一种面向金融时间序列的趋势特征挖掘算法研究 （这个好像是论文）<br>数据分析   R语言实战<br>数据可视化实战：使用D3设计交互式图表<br>其实这里穿插了学习flask  + echart 把股票趋势 还有talib的指标通过网页展示<br>此时已经很牛叫兽创建了自己的机器学习群然后在开始补充数学 和机器学习知识和官网文档<br>scikit-learn.user_guide_0.16.1<br>Matplotlib<br>scipy-ref-0.17.1<br>numpy-ref-1.10.1<br>pandas<br>Pattern_Classification_Duba中文版（模式分类）<br>统计思维：程序员数学之概率统计<br>PRML中文版全文<br>2012.李航.统计学习方法<br>机器学习实战(单页视图)<br>接下来漫长的资料狂过程 找寻了很多资料<br>社交网站的数据挖掘与分析(中文版)<br>Python灰帽子 黑客与逆向工程师的Python编程之道<br>集体智慧编程-python算法应用<br>笨办法学 Python(第四版）<br>[黑客攻防技术宝典Web实战篇].Dafydd.Stuttard.第2版<br>机器学习实战(单页视图)<br>PYTHON数据可视化编程实战  </p>
+<h3 id="开始玩携程赛"><a href="#开始玩携程赛" class="headerlink" title="开始玩携程赛"></a>开始玩携程赛</h3><p>利用python进行线性回归<br>Machine Learning for Hackers<br>Machine Learning in Python<br>scikit-learn-docs<br>机器学习系统设计.python<br>Think Bayes<br>机器学习算法原理与编程实践<br>Think Complexity(复杂性思考)<br>PRML笔记-Notes on Pattern Recognition and Machine Learning<br>Neural Network and Deep Learning<br>数学模型 姜启源第四版电子书<br>数学之美  第2版<br>凸优化——影印版<br>概率图模型  原理与技术（美）科勒，（以）弗里德曼著 北京：清华大学出版社<br>数学建模算法与程序（这本很重要，我看了挺多次的）<br>由于我并没正式的读过大学 在对一群人的羡慕下 我找了一些简单的资料<br>线性代数基础讲义（完整版）<br>矩阵分析与应用 第2版<br>《线性代数学习辅导与习题全解》同济第五版<br>支持向量机导论<br>《线性代数》同济第五版<br>概率论与数理统计习题全解指南（浙大四版）<br>概率论与数理统计辅导及习题精解浙大版_13350053<br>数学分析(第二册)(周民强)<br>数学分析(第一册)(周民强)<br>数学分析3周民强<br>泛函分析<br>周志华—机器学习（这本是一起找到的）<br>托马斯微积分（第10版）<br>然后还有其它的资料<br>缺失数据的统计处理<br>缺失数据统计分析(第二版)<br>Ensemble_Methods_Foundations_and_Algorithms<br>Large Scale Machine Learning with Python-Packt Publishing(2016)   </p>
+</blockquote>
+<h3 id="ccf用电赛的时候"><a href="#ccf用电赛的时候" class="headerlink" title="ccf用电赛的时候"></a>ccf用电赛的时候</h3><blockquote>
+<p>探索性数据分析+[美]David C.Hoaglin等.现代外国统计学优秀着作译丛<br>R语言与统计分析<br>统计学与R读书笔记(第六版)<br>xgboost导读和实战<br>经典算法大全<br>数据之魅：基于开源工具的数据分析<br>MATLAB数据分析与挖掘实战（其实当时我有一个队友mat搞matlab的）<br>爱上统计学  </p>
+</blockquote>
+<h3 id="下面的书是想对特征分析有更深的了解，主要是波形里面的东西"><a href="#下面的书是想对特征分析有更深的了解，主要是波形里面的东西" class="headerlink" title="下面的书是想对特征分析有更深的了解，主要是波形里面的东西"></a>下面的书是想对特征分析有更深的了解，主要是波形里面的东西</h3><blockquote>
+<p>音频信号分类算法研究<br>倾向值分析：统计方法与应用（美）郭申阳<br>非平稳信号特征提取方法及其应用<br>小波分析及其应用__孙延奎<br>MATLAB6.5辅助小波分析与应用<br>矩阵分析与应用(张贤达)<br>奥本海默 信号与系统 中文版 (第二版)<br>CCF 拿下了二等奖，发现自己想知道数据挖掘是干嘛的   在找了一些科普资料来学习<br>数据挖掘：概念与技术（中文第三版）<br>推荐系统实践<br>随机过程（Sheldon M.Ross 著）<br>随机过程 内容、方法与技巧<br>复旦大学所用随机过程<br>通信系统中随机过程的模型研究<br>数据挖掘原理与算法  第3版<br>不确定性多目标优化的数据挖掘理论及应用  </p>
+</blockquote>
+<h3 id="我开始了对哲学的思考"><a href="#我开始了对哲学的思考" class="headerlink" title="我开始了对哲学的思考"></a>我开始了对哲学的思考</h3><blockquote>
+<p>爱比克泰德论说集.王文华译.商务印书馆(2009)   （这本我现在还在读）<br>在插播一下 我还对英语感兴趣了，因为苍老师  吴彦祖 动不动的就是英语资料（我内心是崩溃的）<br>新东方·英语语法新思维  </p>
+<p>在与yin书和老王争论规则的时候 还有加入到莫言的群里<br>粗糙集理论与方法<em>10465281<br>keras1.0中文文档</em>带书签和红字链接版<br>数据科学实战_高清非扫描版<br>[O’Reilly：社交网站的数据挖掘与分析].(Mattbew.A.Russell).师蓉<br>数据挖掘技术与工程实践<br>程序员的数学<br>管理海量数据-压缩、索引和查询 第2版<br>设计模式之禅(第二版)<br>基于机器学习的智能运维–裴丹  </p>
+<p>书差不多了 不过还有一些接下来看的书  </p>
+<p>信息论与编码 曹雪虹<br>《数据挖掘：概念与技术》【韩家炜】原书第三版 中文版<br>麦肯锡：机器的崛起  中国高管眼中的人工智能<br>信息论、推理与学习算法  翻译版<br>Python机器学习——预测分析核心算法<br>思维的乐趣matrix67数学笔记<br>线性代数的几何意义<br>数据仓库<br>自适应滤波器原理<br>《线性代数及其应用》(美 第三版)（中文版）  </p>
+</blockquote>
+<p>我敢说 如果数据科学家如果招数是降龙十八掌，我就会一掌而已  </p>
+<p>因为这些书名都存在我的电脑里面<br>还有更多的书名我就不列了   </p>
+<p>在发一下我的博客搜索历程<br><img src="https://ypengit.github.io/images/img_0003.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0004.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0005.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0006.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0007.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0008.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0009.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0010.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0011.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0012.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0013.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0014.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0015.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0016.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0017.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0018.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0019.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0020.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0021.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0022.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0023.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0024.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0025.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0026.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0027.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0028.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0029.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0030.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0031.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0032.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0033.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0034.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0035.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0036.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0037.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0038.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0039.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0040.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0041.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0042.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0043.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0044.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0045.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0046.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0047.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0048.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0049.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0050.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0051.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0052.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0053.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0054.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0055.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0056.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0057.png" style="text-align：center"><br><img src="https://ypengit.github.io/images/img_0058.png" style="text-align：center">  </p>
+<p>完了吗  ？？<br>嗯 完了  我在说一个这圈子里面我心里的一个疙瘩把。<br>其实我现在不想在玩算法比赛了，真的没劲玩了  </p>
+<p>助学金比赛回来心就有点累了，加上国网信通产业集团给了我一份工作，从之前的月收入5000 翻了3倍，我其实还是挺知足的，电网待我很不错。  </p>
+<p>但是在不想玩比赛的情况下，我连续被两个群踢了，在京东赛的群因为发现了leak  没和管理员说，然后直接在群里说这个题目有leak,希望有用leak提分的人出来说一下，然后被管理员踢了，还说我影响了比赛。（对我来说这个过程非常的恶心）<br>第二次可能是我在群里说  机器学习的成果普遍没被企业接受<br>还写了一个可能在天池群看来是一个误导新手的导图。把我踢了，被踢时是在和京东赛的管理员争执机器学习在股票预测上的真伪。<br>附上我写的指导图<br><img src="https://ypengit.github.io/images/img_0059.png" style="text-align：center"><br>就写到这里把 </p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/杂谈-编程/" rel="tag"># 杂谈 编程</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/05/13/LeetCode代码-逐渐更新/" rel="next" title="LeetCode代码(逐渐更新)">
+                <i class="fa fa-chevron-left"></i> LeetCode代码(逐渐更新)
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="ypeng" />
+          <p class="site-author-name" itemprop="name">ypeng</p>
+           
+              <p class="site-description motion-element" itemprop="description">A blog of ypeng</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#相识"><span class="nav-number">1.</span> <span class="nav-text">相识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#缘由"><span class="nav-number">2.</span> <span class="nav-text">缘由</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#智教授文章正文"><span class="nav-number">3.</span> <span class="nav-text">智教授文章正文</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一次"><span class="nav-number">3.1.</span> <span class="nav-text">第一次</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#入门读的书有"><span class="nav-number">3.2.</span> <span class="nav-text">入门读的书有</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开始玩携程赛"><span class="nav-number">3.3.</span> <span class="nav-text">开始玩携程赛</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ccf用电赛的时候"><span class="nav-number">3.4.</span> <span class="nav-text">ccf用电赛的时候</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下面的书是想对特征分析有更深的了解，主要是波形里面的东西"><span class="nav-number">3.5.</span> <span class="nav-text">下面的书是想对特征分析有更深的了解，主要是波形里面的东西</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#我开始了对哲学的思考"><span class="nav-number">3.6.</span> <span class="nav-text">我开始了对哲学的思考</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-ypeng"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">ypeng</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
